@@ -76,3 +76,18 @@ Un archivo Excel consolidado con todos los datos de entrada limpios, más un cor
 ## Nota de seguridad
 
 Este proyecto **nunca** contiene contraseñas ni credenciales reales. El archivo `.env` con credenciales verdaderas está excluido mediante `.gitignore` y solo `.env.example` (con valores de ejemplo) se sube al repositorio.
+
+
+---
+
+## Resultado real (capturas de ejecucion)
+
+Estas capturas muestran el resultado real de ejecutar el flujo completo sobre los datos ficticios de ejemplo (ventas_norte.csv y ventas_sur.csv).
+
+Reporte consolidado (equivalente a reporte_consolidado.xlsx), con la columna total_linea calculada y el archivo de origen de cada fila:
+
+![Resultado reporte consolidado](resultado-reporte-consolidado.png)
+
+Notificacion simulada (sin credenciales de correo configuradas, tal como se comporta el proyecto por seguridad), mostrando el resumen ejecutivo que se enviaria por correo:
+
+![Resultado notificacion simulada](resultado-notificacion-simulada.png)
